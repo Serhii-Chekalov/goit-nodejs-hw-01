@@ -1,6 +1,11 @@
-import { listContacts, getContactById } from "./contacts.js";
+const {
+  listContacts,
+  getContactById,
+  addContact,
+  removeContact,
+} = require("./contacts");
+const { Command } = require("commander");
 
-import { Command } from "commander";
 const program = new Command();
 program
   .option("-a, --action <type>", "choose action")
